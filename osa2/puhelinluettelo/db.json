@@ -1,0 +1,54 @@
+{
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "040-123456",
+      "id": "1"
+    },
+    {
+      "name": "Ada Lovelace",
+      "number": "39-44-5323523",
+      "id": "2"
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": "3"
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "39-23-6423122",
+      "id": "4"
+    },
+    {
+      "id": "978b",
+      "name": "Mervi Ranta",
+      "number": "09-46728109"
+    },
+    {
+      "id": "c662",
+      "name": "Arto Artonen",
+      "number": "79872389"
+    },
+    {
+      "id": "ecdd",
+      "name": "Poppa Loora",
+      "number": "371987"
+    },
+    {
+      "id": "beb3",
+      "name": "Eeva Miettinen",
+      "number": "80958034953"
+    },
+    {
+      "id": "816b",
+      "name": "Adam Jumalinen",
+      "number": "74237509"
+    },
+    {
+      "id": "f82b",
+      "name": "NooraLotta",
+      "number": "5678"
+    }
+  ]
+}
