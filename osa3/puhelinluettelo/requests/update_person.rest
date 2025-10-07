@@ -1,0 +1,6 @@
+PUT https://fs-puhelinluettelo-f2nf.onrender.com/api/persons/1
+Content-Type: application/json
+
+{
+	"number": "09 876 543"
+}

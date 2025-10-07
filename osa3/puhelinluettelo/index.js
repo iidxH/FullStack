@@ -111,6 +111,33 @@ app.post('/api/persons', (request, response) => {
   response.json(person)
 })
 
+
+app.put('/api/persons/:id', (request, response) => {
+  const id = request.params.id
+  const body = request.body;
+  const person = persons.find(person => person.id === id)
+  console.log("Muokattava henkilö: ", person)
+  console.log("Uusi numero: ", body.number)
+
+  if (!body.number) {
+    return response.status(400).json({ error: 'Number is missing' })
+  }
+
+  if (person) {
+    const updatedPerson = {
+      id: id,
+      name: person.name,
+      number: body.number
+    }
+
+    persons = persons.map(person => (person.id !== id ? person : updatedPerson))
+    response.json(updatedPerson)
+  } else {
+    response.status(404).json({ error: 'Person not found' });
+  }
+})
+
+
 app.delete('/api/persons/:id', (request, response) => {
 	const id = request.params.id
     persons = persons.filter(person => person.id !== id)
